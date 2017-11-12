@@ -34,4 +34,5 @@ for p in range(1, NO_PARTICIPATS + 1):
                 point_files_parsed += 1
                 for row in reader:
                     [x, y, time, target] = row
-print('Average move finish time: {move_time}\tAverage point finish time: {point_time}'.format(move_time=move_times_sum / move_files_parsed, point_time=point_times_sum / point_files_parsed))
+print('Average move finish time: {move_time}\tAverage point finish time: {point_time}'.format(
+    move_time=move_times_sum / move_files_parsed, point_time=point_times_sum / point_files_parsed))
